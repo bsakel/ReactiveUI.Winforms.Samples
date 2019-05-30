@@ -32,10 +32,10 @@ namespace ReactiveUI.Winforms.Samples.Routing.ViewModels
             set => this.RaiseAndSetIfChanged(ref _applicationTitle, value);
         }
 
-        public ReactiveCommand ShowHomeCommand { get; }
-        public ReactiveCommand ShowAboutCommand { get; }
-        public ReactiveCommand ShowContactCommand { get; }
-        public ReactiveCommand GoBackCommand { get; }
+        public ReactiveCommand<System.Reactive.Unit, System.Reactive.Unit> ShowHomeCommand { get; }
+        public ReactiveCommand<System.Reactive.Unit, System.Reactive.Unit> ShowAboutCommand { get; }
+        public ReactiveCommand<System.Reactive.Unit, System.Reactive.Unit> ShowContactCommand { get; }
+        public ReactiveCommand<System.Reactive.Unit, System.Reactive.Unit> GoBackCommand { get; }
 
         private void ShowHome()
         {
